@@ -14,12 +14,12 @@ This is a Python hobby project created to optimize team selection in the officia
 * JSON data handling
 
 ## How to Run
-1. Clone this repository or download the `F!TeamPlanner.py` file.
+1. Clone this repository or download the `F1TeamPlanner.py` file.
 2. Ensure you have Python installed.
 3. Install the required `requests` library by running: 
    `pip install requests`
 4. Run the script:
-   `python "F!TeamPlanner.py"`
+   `python "F1TeamPlanner.py"`
 
 ## About the Author
 Created as a personal project to practice data pipelines, API integration, and algorithm optimization in Python.

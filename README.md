@@ -22,7 +22,3 @@ Tämä skripti auttaa optimoimaan olemassa olevan tiimin tekemällä vain sallit
 
 Koodin ajamiseen tarvitset [Pythonin](https://www.python.org/) (versio 3.6 tai uudempi). Lisäksi sinun tulee asentaa ulkoinen `requests`-kirjasto datan hakemista varten.
 
-1. Kloonaa repositorio koneellesi:
-   ```bash
-   git clone [https://github.com/KAYTTAJANIMESI/f1-fantasy-planner.git](https://github.com/KAYTTAJANIMESI/f1-fantasy-planner.git)
-   cd f1-fantasy-planner

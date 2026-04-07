@@ -1,25 +1,28 @@
-# F1 Fantasy Team Planner 🏎️
+# 🏎️ F1 Fantasy Team Planner
 
-This is a Python hobby project created to optimize team selection in the official F1 Fantasy game. The script fetches real-time player and constructor data from the F1 Fantasy REST API and calculates the highest-scoring team combination within a given budget.
+Tämä repositorio sisältää kaksi Python-työkalua, joiden avulla voit optimoida ja suunnitella tiimisi virallisessa [F1 Fantasy](https://fantasy.formula1.com/) -pelissä. Skriptit hakevat reaaliaikaiset hinta- ja pistetiedot suoraan F1:n rajapinnasta ja laskevat matemaattisesti optimaalisimmat tiimiyhdistelmät.
 
-## Features
-* **Live Data Fetching:** Connects to the F1 Fantasy API to get the latest driver and constructor prices and points.
-* **Data Processing:** Cleans and formats the incoming JSON data for analysis.
-* **Optimization Algorithm:** Uses Python's `itertools` to evaluate hundreds of thousands of combinations, finding the absolute best lineup (5 drivers, 2 constructors) under a $100M budget.
+## 🚀 Ominaisuudet
 
-## Technologies Used
-* **Python 3**
-* `requests` (API integration)
-* `itertools` (Combinatorics and logic)
-* JSON data handling
+Repositorio sisältää kaksi eri skriptiä eri käyttötarkoituksiin:
 
-## How to Run
-1. Clone this repository or download the `F1TeamPlanner.py` file.
-2. Ensure you have Python installed.
-3. Install the required `requests` library by running: 
-   `pip install requests`
-4. Run the script:
-   `python "F1TeamPlanner.py"`
+### 1. `F!TeamPlanner.py` (Uuden tiimin luonti)
+Tämä skripti on tarkoitettu tilanteeseen, jossa olet rakentamassa täysin uutta tiimiä (esim. kauden alussa tai kun käytät Wildcardin).
+* Etsii kaikkien mahdollisten yhdistelmien joukosta parhaan 5 kuskin ja 2 tallin kombinaation.
+* Pitää huolen, ettei 100 miljoonan dollarin budjetti ylity.
+* Maksimoi odotusarvoiset pisteet nykyisen datan perusteella.
 
-## About the Author
-Created as a personal project to practice data pipelines, API integration, and algorithm optimization in Python.
+### 2. `F1TeamChangePlanner.py` (Nykyisen tiimin päivitys ja vaihdot)
+Tämä skripti auttaa optimoimaan olemassa olevan tiimin tekemällä vain sallitun määrän vaihtoja kisaviikonloppujen välillä.
+* Ottaa huomioon nykyisen tiimisi ja etsii parhaat mahdolliset vaihdot (oletuksena max 2 vaihtoa).
+* **DRS Boost -logiikka:** Tunnistaa automaattisesti tiimisi parhaan kuskin ja antaa hänelle 2x-pisteet (DRS Boost).
+* Näyttää tulosteessa selkeästi, ketkä kuskit tai tallit ovat uusia (🔄) ja kenellä on DRS Boost (🔥).
+
+## 🛠️ Asennus ja vaatimukset
+
+Koodin ajamiseen tarvitset [Pythonin](https://www.python.org/) (versio 3.6 tai uudempi). Lisäksi sinun tulee asentaa ulkoinen `requests`-kirjasto datan hakemista varten.
+
+1. Kloonaa repositorio koneellesi:
+   ```bash
+   git clone [https://github.com/KAYTTAJANIMESI/f1-fantasy-planner.git](https://github.com/KAYTTAJANIMESI/f1-fantasy-planner.git)
+   cd f1-fantasy-planner

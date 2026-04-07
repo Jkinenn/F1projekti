@@ -6,7 +6,7 @@ Tämä repositorio sisältää kaksi Python-työkalua, joiden avulla voit optimo
 
 Repositorio sisältää kaksi eri skriptiä eri käyttötarkoituksiin:
 
-### 1. `F!TeamPlanner.py` (Uuden tiimin luonti)
+### 1. `F1TeamPlanner.py` (Uuden tiimin luonti)
 Tämä skripti on tarkoitettu tilanteeseen, jossa olet rakentamassa täysin uutta tiimiä (esim. kauden alussa tai kun käytät Wildcardin).
 * Etsii kaikkien mahdollisten yhdistelmien joukosta parhaan 5 kuskin ja 2 tallin kombinaation.
 * Pitää huolen, ettei 100 miljoonan dollarin budjetti ylity.
